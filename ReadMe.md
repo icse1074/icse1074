@@ -55,7 +55,7 @@ repository and are instead hosted externally:
   tests, mutants, analysis results, etc.), as described below.
 - **`test_adequacy_study/test_augmentation/augmented_tests`** — augmented test suites 
 
-All are hosted at: `<https://zenodo.org/records/21098028>`
+All are hosted at: https://zenodo.org/records/21098028
 
 Download and extract them before running the pipeline:
 - `data.zip` → extract into `data/`

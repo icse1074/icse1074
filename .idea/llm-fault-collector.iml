@@ -5,6 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/output" />
+      <excludeFolder url="file://$MODULE_DIR$/zenodo" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 virtualenv at ~/PycharmProjects/llm-fault-collector/venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

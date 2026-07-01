@@ -1,0 +1,22 @@
+Your previous test {test_id} was REJECTED because it fails with the following error
+
+{errors}
+
+This is how the test fits within the test suite :
+
+{tests}
+
+
+Please review the error above, analyse the test suite and identify the incorrect test {test_id} then fix it accordingly. Respond only with the fixed body of the test method.
+
+
+
+
+
+Rules:
+- Output ONLY valid Python code, no explanations
+- Do NOT add new tests, only fix {test_id}
+- Do not add, remove, or duplicate any @patch decorators. Only fix the test body and assertions.
+- Tests MUST only fail with AssertionError
+- NEVER call the function outside an assert statement
+- Include all necessary imports including the function name from the file solution.py **INSIDE** the test function.

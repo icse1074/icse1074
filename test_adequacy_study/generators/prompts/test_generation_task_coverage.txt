@@ -1,0 +1,13 @@
+The following function is from the file solution.py
+Your goal is to generate unit tests for the function to achieve 100% {coverage} coverage.
+
+{code}
+
+Return only the unit tests implementation.
+
+Rules:
+- Output ONLY valid Python code
+- No extra explanations
+- Avoid using parameterized tests
+- You can write as many tests as you want
+- Include all necessary imports including the function name from the file solution.py

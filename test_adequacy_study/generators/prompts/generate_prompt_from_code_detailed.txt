@@ -1,0 +1,12 @@
+Given this code, write a prompt to generate it. Please be as descriptive as possible.
+
+Restrictions:
+- It must start with the following: "Write a python function..."
+- You must include the function signature
+
+Negative instructions:
+- Do NOT add any information regarding the input
+- Do NOT add the code implementation to the prompt
+
+Code:
+{code}

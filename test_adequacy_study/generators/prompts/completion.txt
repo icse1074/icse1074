@@ -1,0 +1,10 @@
+Complete the following Python function.
+
+{prompt}
+
+Return only the completed function implementation.
+
+Rules:
+- Output ONLY valid Python code
+- No extra explanations
+- Include all necessary imports

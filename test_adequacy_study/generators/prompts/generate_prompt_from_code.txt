@@ -1,0 +1,13 @@
+Given this code, write a prompt to generate it. It should be maximum of 1 sentence long.
+
+Restrictions:
+- 1 sentence long
+- It must start with the following: "Write a python function...."
+- You must include the function signature
+
+Negative instructions:
+- Do NOT add any information regarding the input
+- Do NOT add the code implementation to the prompt
+
+Code:
+{code}

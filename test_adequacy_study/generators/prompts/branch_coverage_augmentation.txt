@@ -1,0 +1,17 @@
+The current test suite has not covered {nr_missing_branches} branches.
+
+The following branches in solution.py are not covered by any test:
+{missing_branches}
+
+Please add new tests to cover these missing branches. Keep all existing tests unchanged.
+
+Current test suite:
+{tests}
+
+Rules:
+- Output ONLY valid Python code, no explanations
+- Keep ALL existing tests unchanged
+- Add new tests that exercise the uncovered branches shown above
+- Each new test must directly target one or more of the missing branches
+- Tests MUST only fail with AssertionError — use direct assert statements
+- All imports must be from solution.py

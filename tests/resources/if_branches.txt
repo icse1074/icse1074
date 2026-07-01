@@ -1,0 +1,17 @@
+import os
+import string
+from collections import Counter
+
+
+def word_count(file_path):
+    if not os.path.exists(file_path):
+        return {}
+    with open(file_path, 'r', encoding='utf-8') as file:
+        text = file.read().lower()
+    translator = str.maketrans('', '', string.punctuation)
+    text = text.translate(translator)
+    words = text.split()
+    if not words:
+        return {}
+    counts = Counter(words)
+    return dict(sorted(counts.items(), key=lambda x: (-x[1], x[0])))

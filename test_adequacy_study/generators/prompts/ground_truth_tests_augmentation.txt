@@ -1,0 +1,23 @@
+The current test suite cannot distinguish the following faulty solution from the canonical one.
+
+Canonical solution:
+{canonical_solution}
+
+Faulty solution (the tests must catch this):
+{faulty_solution}
+
+Analyze the two solutions carefully. Identify the exact behavioral difference — what input or
+condition causes them to produce different outputs — then write new tests that expose it.
+
+Keep all existing tests unchanged, and add the additional tests.
+
+Current test suite:
+{existing_tests}
+
+Rules:
+- Output ONLY valid Python code, no explanations
+- IMPORTANT : INCLUDE AND KEEP ALL existing tests unchanged in test suite
+- Generate as many additional tests as you can ass long as they pass on the canonical solution but fail on the faulty one
+- Use direct assert statements to verify the expected output of the CANONICAL code
+- Make sure to include all necessary imports. All imports must be from the file solution.py
+- Place all tests in a test class

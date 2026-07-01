@@ -1,0 +1,20 @@
+The current test suite kills {mutation_score}% of mutants. {n_surviving} mutants are still alive.
+
+The following mutants were not killed by any test:
+{surviving_mutants}
+
+For each surviving mutant, identify what input or condition would produce different behavior
+between the original and mutated code, then write a test that exposes that difference.
+
+Keep all existing tests unchanged.
+
+Current test suite:
+{tests}
+
+Rules:
+- Output ONLY valid Python code, no explanations
+- Keep ALL existing tests unchanged
+- Add at least one new test per surviving mutant
+- Each new test must directly target the mutated line and operator shown above
+- Use direct assert statements to verify the expected output of the ORIGINAL code
+- All imports must be from solution.py

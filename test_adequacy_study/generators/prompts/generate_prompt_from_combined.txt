@@ -1,0 +1,22 @@
+You are given 2 prompts that instruct a model to generate a solution.
+Your goal is to create a new prompt that combines the two prompts.
+Please be as descriptive as possible
+
+Restrictions:
+- It must start with the following: "Write a python function..."
+- You must include the function signature
+- Must be detailed
+
+Negative instructions:
+- Do NOT add any information regarding the input
+- Do NOT add the code implementation to the prompt
+
+Prompt 1:
+```
+{prompt1}
+```
+
+Prompt 2:
+```
+{prompt2}
+```

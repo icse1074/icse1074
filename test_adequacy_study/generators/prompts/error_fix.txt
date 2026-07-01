@@ -1,0 +1,22 @@
+Your previous test suite was REJECTED because it contains tests that fail with non-assertion errors.
+Do NOT reason about whether they are correct. Just change them.
+
+This is the rejected test suite:
+{tests}
+
+
+Below, I share the errors I get.
+Please review the errors below, identify the incorrect tests and fix them accordingly. Respond only with the fixed test class.
+
+{errors}
+
+
+
+Rules:
+- Output ONLY valid Python code, no explanations
+- Do NOT add new tests, only fix the existing ones
+- Keep the same test structure and test names
+- Each test must contain ONLY assert statements
+- Tests MUST only fail with AssertionError
+- NEVER call the function outside of an assert statement
+- Include all necessary imports including the function name from the file solution.py

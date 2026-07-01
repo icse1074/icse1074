@@ -1,0 +1,56 @@
+import os
+import tempfile
+from solution import word_count
+
+def write_temp_file(content):
+    tf = tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', delete=False)
+    tf.write(content)
+    tf.flush()
+    tf.close()
+    return tf.name
+
+def test_basic_counts_and_sorting():
+    content = "Apple apple banana."
+    path = write_temp_file(content)
+    try:
+        result = word_count(path)
+        assert result == {"apple": 2, "banana": 1}
+    finally:
+        os.remove(path)
+
+def test_punctuation_and_case_handling():
+    content = "Hello, world! HELLO... world? apple apple apple banana, banana cherry"
+    path = write_temp_file(content)
+    try:
+        result = word_count(path)
+        expected = {"apple": 3, "banana": 2, "hello": 2, "world": 2, "cherry": 1}
+        assert result == expected
+    finally:
+        os.remove(path)
+
+def test_apostrophes_and_hyphens_removed():
+    content = "don't don't don't re-enter re-enter"
+    path = write_temp_file(content)
+    try:
+        result = word_count(path)
+        assert result == {"dont": 3, "reenter": 2}
+    finally:
+        os.remove(path)
+
+def test_empty_file_returns_empty_dict():
+    path = write_temp_file("")
+    try:
+        result = word_count(path)
+        assert result == {}
+    finally:
+        os.remove(path)
+
+def test_numbers_and_unicode_words():
+    content = "naïve café café 123 123"
+    path = write_temp_file(content)
+    try:
+        result = word_count(path)
+        expected = {"123": 2, "café": 2, "naïve": 1}
+        assert result == expected
+    finally:
+        os.remove(path)

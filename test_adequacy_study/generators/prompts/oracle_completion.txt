@@ -1,0 +1,21 @@
+The following is the signature and docstring of a function from the file solution.py
+Your goal is to complete the unit test below by adding the missing oracles, based on the behavior described in the docstring.
+
+{prompt}
+
+The test below sets up a test case, calls the function, defines the test inputs in the assertions but does not have an oracle yet.
+
+{test_with_masks}
+
+Return only the corrected and completed of unit test method (body and signature only), with the correct oracles added.
+
+Rules:
+- Output ONLY valid Python code of the test method body and signature
+- Do not generate any more tests
+- Do not include the decorators in your response
+- Do not include the test class
+- No extra explanations
+- The behavior described in the docstring above is the correct one. Add oracles to **assert** and **reflect** it
+- Do not change the existing setup, mocks, or function call
+- Avoid using parameterization
+- Include all necessary imports including the function name from the file solution.py  **INSIDE** the test function
